@@ -2,13 +2,19 @@
 
 // Mas detalhe esse arguments só funciona com funções com nome function com function com arrowFunction não funciona.
 
-function funcao() {
-  let total = 0;
-  for (let argumento of arguments) {
-    total += argumento;
-  }
-
-  console.log(total);
+function funcao(a, b = 2) {
+  console.log(a + b);
 }
 
-funcao(1, 2, 3, 4, 5, 6, 7);
+funcao(2);
+
+// function funcao() {
+//   let total = 0;
+//   for (let argumento of arguments) {
+//     total += argumento;
+//   }
+
+//   console.log(total);
+// }
+
+// funcao(1, 2, 3, 4, 5, 6, 7);
