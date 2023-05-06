@@ -5,7 +5,7 @@ function retornaFuncao(nome) {
   }
 }
 
-//  exemplo de closures
+//  exemplo de closures > É A ABILIDADE QUE UMA FUNÇÃO TEM DE ACESSAR O SEU ESCOPO LEXICO.
 // adicionando alteração de parametros para as funções
 
 const funcao = retornaFuncao('Davi');
