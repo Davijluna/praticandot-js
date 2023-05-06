@@ -13,5 +13,5 @@ const funcao2 = retornaFuncao('joão');
 
 console.log(funcao)
 
-console.log(funcao, funcao2)
+console.log(funcao(), funcao2())
 
