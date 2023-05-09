@@ -4,6 +4,7 @@ function rand(min = 1000, max = 3000) {
 }
 
 function f1(callback) {
+  // Essas callbacks serve para simular uma chamada asincrona de um servidor 
   setTimeout(function() {
     console.log('f1');
     if (callback) callback()
@@ -12,6 +13,7 @@ function f1(callback) {
 }
 
 function f2(callback) {
+  // Essas callbacks serve para simular uma chamada asincrona de um servidor 
   setTimeout(function() {
     console.log('f2');
     if (callback) callback()
@@ -19,6 +21,7 @@ function f2(callback) {
 }
 
 function f3(callback) {
+  // Essas callbacks serve para simular uma chamada asincrona de um servidor 
   setTimeout(function() {
     console.log('f3');
     if (callback) callback()
