@@ -25,10 +25,26 @@ function f3(callback) {
   }, rand());
 }
 
-f1(function() {
-  f2(function() {
-    f3(function() {
-      console.log('Olá Mundo!');
-    })
-  });
-});
+f1(f1Callback);
+
+function f1Callback() {
+  f2(f2Callback);
+}
+
+function f2Callback() {
+  f3(f3Callback);
+}
+
+function f3Callback() {
+  console.log('Olá Mundo!');
+}
+
+
+// PARTE COMENTADA PARA EXEMPLIFICAR.
+// f1(function() {
+//   f2(function() {
+//     f3(function() {
+//       console.log('Olá Mundo!');
+//     })
+//   });
+// });
