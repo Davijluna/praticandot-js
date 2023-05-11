@@ -73,6 +73,7 @@ form button:hover {
   font-size: 1em;
   border: none;
   background: #dfdfdf;
+  border-radius: 10px;
   cursor: pointer;
 }
 
