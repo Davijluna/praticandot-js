@@ -1,8 +1,11 @@
 // Calculadora com factory function
 
+// funcão que engloba todo o sinstema da calculadora.
 function criaCalculadora() {
   // factory function é basicamente uma função que retorna um Objeto
   return {
+
+    // Objeto que a função acessa
     display: document.querySelector('.display'),
     btnClear: document.querySelector('.btn-clear'),
 
