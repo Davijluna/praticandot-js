@@ -1,11 +1,15 @@
-function nome() {
-  console.log('Davi')
-}
+let number = 10
 
-function tempo() {
-  console.log('OI');
- return setTimeout(nome, 1000)
+if(number % 3 == 0 && number % 5 == 0) {
+  console.log('fizzBuzz')
+  return 'fizzBuzz'
 }
-
-setTimeout(tempo, 5000);
+if(number % 5 == 0) {
+  console.log('fizz')
+  return 'fizz'
+}
+if(number % 3 == 0) {
+  console.log('buzz')
+  return 'buzz'
+}
 
