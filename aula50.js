@@ -1,6 +1,6 @@
 // Nessa parte aprende sobre o arguments que guarda os valores da funcao quando ela não tem os parametros
 
-// Mas detalhe esse arguments só funciona com funções com nome function com function com arrowFunction não funciona.
+// Mas detalhe esse arguments só funciona, com funções com nome function com arrowFunction não funciona.
 
 function funcao(a, b = 2) {
   console.log(a + b);
