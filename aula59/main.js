@@ -8,7 +8,7 @@ function Calculadora() {
       const el = event.target;
       if (el.classList.contains('btn-num')) this.addNumDisplay(el);
       // adicionando as funções do clear, delete e do adiciona conta.
-      if (el.classList.contains('btn-clear')) this.clear();
+      if (el.classList.contains('btn-clear')) this.clear(); // ok
       if (el.classList.contains('btn-del')) this.del(el);
       if (el.classList.contains('btn-eq')) this.realizaConta(el);
     });
@@ -16,8 +16,11 @@ function Calculadora() {
  // METODO.
   this.addNumDisplay = el => this.display.value += el.innerText;
 // ESTA PARTE LIMPA O DISPLAY DA CALCULADORA 
-  this.clear = () => {
-    this.display.value = '';
+  this.clear = () => this.display.value = '';
+  
+  // ESTA PARTE DELETA NUMERO UM A UM.
+  this.del = () => {
+
   }
  // METODO.
   this.inicia = () => {
