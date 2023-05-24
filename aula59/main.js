@@ -1,7 +1,23 @@
 function Calculadora() { 
+
   // Criando os metodos da calculadora
   // METODO.
   this.display = document.querySelector('.display');
+
+   // METODO.
+ // AQUI ESTA CHAMANDO O METODO >> capturaCliques
+ this.inicia = () =>  {
+  this.capturaCliques();
+  this.capturaEnter();
+}
+
+this.capturaEnter = () => {
+  document.addEventListener('keyup', e => {
+    if (e.code !== 13) return;
+    this.realizaConta();
+  });
+};
+
  // METODO.
   this.capturaCliques = () => {
     document.addEventListener('click', event => {
@@ -39,9 +55,6 @@ function Calculadora() {
     this.display.value = this.display.value.slice(0, -1);
 
   }
- // METODO.
- // AQUI ESTA CHAMANDO O METODO >> capturaCliques
-  this.inicia = () => this.capturaCliques();
 
 }
 
