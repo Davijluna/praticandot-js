@@ -4,7 +4,7 @@ function Calculadora() {
   this.capturaCliques = () => {
     document.addEventListener('click', event => {
       const el = event.target;
-      if (el.classList.contains('btn-num')) this.addNumDisplay(el);
+      if (el.classLiet.contains('btn-num')) this.addNumDisplay(el);
     });
   };
 
