@@ -17,16 +17,15 @@ function Calculadora() {
   this.addNumDisplay = el => this.display.value += el.innerText;
 // ESTA PARTE LIMPA O DISPLAY DA CALCULADORA 
   this.clear = () => this.display.value = '';
-  
+
   // ESTA PARTE DELETA NUMERO UM A UM.
   this.del = () => {
+    this.display.value = this.display.value.slice(0, -1);
 
   }
  // METODO.
-  this.inicia = () => {
-     // AQUI ESTA CHAMANDO O METODO >> capturaCliques
-    this.capturaCliques();
-  };
+ // AQUI ESTA CHAMANDO O METODO >> capturaCliques
+  this.inicia = () => this.capturaCliques();
 
 }
 
