@@ -13,6 +13,22 @@ function Calculadora() {
       if (el.classList.contains('btn-eq')) this.realizaConta(el);
     });
   };
+
+  this.realizaConta = () => {
+    try {
+      const conta = eval(this.display.value)
+
+      if(!conta) {
+        alert('Conta inválida');
+        return;
+      }
+
+      this.display.value = conta;
+    } catch(e) {
+      alert('Conta inválida');
+      return;
+    }
+  }
  // METODO.
   this.addNumDisplay = el => this.display.value += el.innerText;
 // ESTA PARTE LIMPA O DISPLAY DA CALCULADORA 
