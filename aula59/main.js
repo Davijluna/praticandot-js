@@ -13,7 +13,7 @@ function Calculadora() {
 
 this.capturaEnter = () => {
   document.addEventListener('keyup', e => {
-    if (e.code !== 13) return;
+    if (e.key === 13) return;
     this.realizaConta();
   });
 };
@@ -46,7 +46,10 @@ this.capturaEnter = () => {
     }
   }
  // METODO.
-  this.addNumDisplay = el => this.display.value += el.innerText;
+  this.addNumDisplay = el => {
+    this.display.value += el.innerText;
+    this.display.focus(); // Aqui mudamos o focu para o display da calculadora.
+  } 
 // ESTA PARTE LIMPA O DISPLAY DA CALCULADORA 
   this.clear = () => this.display.value = '';
 
