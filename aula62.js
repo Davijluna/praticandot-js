@@ -25,5 +25,17 @@ novo2[3] = 'Davi';
 // o que for feito em novo reflete em nomes.
 console.log(novo, nomes, novo2)
 
+// length é um atributo do array ou variavel ele não é um metodo.
+console.log(novo.length, nomes.length, novo2.length)
+
+// usando pop no array
+// retornando o elemento removido.
+const comPop = novo.pop();
+console.log(novo, comPop);
 
 
+// usando shift no array
+// retornando o elemento removido.
+const comShift =  novo.shift()
+console.log(novo, '!!!!!!!!');
+console.log(comShift)
