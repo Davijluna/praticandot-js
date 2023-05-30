@@ -52,5 +52,9 @@ const nome = 'Davi, Jesus, de, Luna';
 const porVigula = nome.split(', ')
 const nomes = nome.split(' ');
 
+// transformando o array em string novamente 
+
+const nome2 = nomes.join(' ');
+
 console.log(nomes);
 
