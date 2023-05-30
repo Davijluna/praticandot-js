@@ -57,4 +57,5 @@ const nomes = nome.split(' ');
 const nome2 = nomes.join(' ');
 
 console.log(nomes);
+console.log(nome2);
 
