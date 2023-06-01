@@ -24,8 +24,6 @@ console.log(pessoasNomesGrande, pessoasMaisDeCinquenta, nomeTerminaComA);
 
 
 
-
-
 // exemplo anterior.
 // const numeros = [5, 50, 1, 4, 5, 90, 50, 30, 6, 8, 10];
 
