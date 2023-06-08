@@ -1,13 +1,58 @@
 // Revisando Ojetos
 
-const pessoa = {
-  nome: 'Luiz',
-  sobrenome: 'Otávio',
+// utilizando construtor
+
+const pessoa1 = new Object();
+pessoa1.nome = 'Luiz';
+pessoa1.sobrenome = 'Otávio';
+
+pessoa1.falarNomre = function() {
+  console.log(`${this.sobrenome} está falando seu nome`);
 }
 
+pessoa1.falarNomre();
 
-// outra maneira de utilizar objetos
-const chave = 'nome';
+delete pessoa1.nome;
 
-console.log(pessoa[chave])
-// console.log(pessoa['nome']);s
+console.log(pessoa1)
+
+
+// const pessoa1 = new Object();
+// pessoa1.nome = 'Luiz';
+// pessoa1.sobrenome = 'Otávio';
+
+// console.log(pessoa1.nome);
+// console.log(pessoa1.sobrenome)
+
+
+// const pessoa2 = {
+//   nome: 'Luiz',
+//   sobrenome: 'Otávio'
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const pessoa = {
+//   nome: 'Luiz',
+//   sobrenome: 'Otávio',
+// }
+
+// s
+// // outra maneira de utilizar objetos
+// const chave = 'nome';
+
+// console.log(pessoa[chave])
+// // console.log(pessoa['nome']);
