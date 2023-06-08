@@ -1,8 +1,14 @@
 // FETCH API E AVIOS(JSON).
 // fetch para buscar os dados do json.
-fetch('pessoas.json')
- .then(resposta => resposta.json()) // aqui ele é convertido para um objeto
- .then(json => carregaElementoNaPagina(json));
+// fetch('pessoas.json')
+//  .then(resposta => resposta.json()) // aqui ele é convertido para um objeto
+//  .then(json => carregaElementoNaPagina(json));
+
+// FAZENDO A TROCA PARA O AXIOS 
+
+axios('pessoas.json')
+.then(resposta => carregaElementoNaPagina(resposta.data))
+
 //  temos 2 then para pegar a resposta para converter para json e isso retorna uma nova promise, 
 // pegamos a nova promise ja convertida e madamos para nossa função.
 
