@@ -1,13 +1,22 @@
 // Revisando Ojetos
 
+// Metodos são funcões que estão dentro do objeto que executão ações.
+
+
+
+
+
+
+
 // utilizando construtor
 
 const pessoa1 = new Object();
 pessoa1.nome = 'Luiz';
 pessoa1.sobrenome = 'Otávio';
+pessoa1.idade = 30
 
 pessoa1.falarNomre = function() {
-  console.log(`${this.sobrenome} está falando seu nome`);
+  console.log(`${this.sobrenome} está falando seu nome e tem ${this.idade} anos de idade`);
 }
 
 pessoa1.falarNomre();
