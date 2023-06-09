@@ -6,13 +6,14 @@
 
 // FAZENDO A TROCA PARA O AXIOS 
 
-axios('pessoas.json')
+axios('http://difiores-001-site3.etempurl.com/Agenda')
 .then(resposta => carregaElementoNaPagina(resposta.data))
 
 //  temos 2 then para pegar a resposta para converter para json e isso retorna uma nova promise, 
 // pegamos a nova promise ja convertida e madamos para nossa função.
 
  const carregaElementoNaPagina = (json) => {
+  console.log(json)
 // Aqui criamos uma tabela para 
   const table = document.createElement('table');
 
@@ -25,15 +26,19 @@ axios('pessoas.json')
 
   // Depois disso inserimos essas tds como filhas de tr
     let td = document.createElement('td');
-    td.innerHTML = pessoa.nome;
+    td.innerHTML = pessoa.aluno;
     tr.appendChild(td);
 
     td = document.createElement('td');
-    td.innerHTML = pessoa.idade;
+    td.innerHTML = pessoa.professor;
     tr.appendChild(td);
 
     td = document.createElement('td');
-    td.innerHTML = pessoa.salario;
+    td.innerHTML = pessoa.disciplina;
+    tr.appendChild(td);
+
+    td = document.createElement('td');
+    td.innerHTML = pessoa.data;
     tr.appendChild(td);
 
     // Aqui inserimos a tr como filha de table
