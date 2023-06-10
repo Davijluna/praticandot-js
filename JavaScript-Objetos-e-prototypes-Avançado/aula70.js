@@ -25,6 +25,20 @@ delete pessoa1.nome;
 
 console.log(pessoa1)
 
+for (let chave in pessoa1) {
+  console.log(chave, 'aqui pega a chave')
+}
+
+for (let chave in pessoa1) {
+  console.log(pessoa1, 'aqui pega o objeto completo')
+}
+
+for (let chave in pessoa1) {
+  console.log(pessoa1[chave], 'aqui pega o objeto completo')
+}
+
+
+
 
 // const pessoa1 = new Object();
 // pessoa1.nome = 'Luiz';
