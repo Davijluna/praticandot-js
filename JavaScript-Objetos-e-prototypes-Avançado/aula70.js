@@ -1,23 +1,39 @@
 // Revisando Ojetos
 
+// PADRÕES DE PROJETOS.
+// Factory functions / Constructor functions / Classes
+function criaPesssoa(nome, sobrenome) {
+  return {
+    nome,
+    sobrenome,
+    get nomeCompleto() {
+      return `${this.nome} ${this.sobrenome}`;
+    }
+  }
+}
+
+const p1 = criaPesssoa('Davi', 'Jesus');
+console.log(p1.nomeCompleto)
+
+// /////////////////
 // Metodos são funcões que estão dentro do objeto que executão ações.
 // utilizando construtor
-// 
+// Quando functions estão dentro de Objetos nos chamamos essas functions de Metodos.
 
-const pessoa1 = new Object();
-pessoa1.nome = 'Luiz';
-pessoa1.sobrenome = 'Otávio';
-pessoa1.idade = 2;
-pessoa1.falarNomre = function() {
-  return (`${this.sobrenome} está falando seu nome e tem ${this.idade} anos de idade`);
-}
+// const pessoa1 = new Object();
+// pessoa1.nome = 'Luiz';
+// pessoa1.sobrenome = 'Otávio';
+// pessoa1.idade = 2;
+// pessoa1.falarNomre = function() {
+//   return (`${this.sobrenome} está falando seu nome e tem ${this.idade} anos de idade`);
+// }
 
-pessoa1.getDataNascimento = function() {
-  const dataAtual = new Date();
-  return dataAtual.getFullYear() - this.idade; 
-}
+// pessoa1.getDataNascimento = function() {
+//   const dataAtual = new Date();
+//   return dataAtual.getFullYear() - this.idade; 
+// }
 
-console.log(pessoa1.getDataNascimento());
+// console.log(pessoa1.getDataNascimento());
 
 // pessoa1.falarNomre();
 
@@ -44,26 +60,10 @@ console.log(pessoa1.getDataNascimento());
 // console.log(pessoa1.nome);
 // console.log(pessoa1.sobrenome)
 
-
 // const pessoa2 = {
 //   nome: 'Luiz',
 //   sobrenome: 'Otávio'
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const pessoa = {
 //   nome: 'Luiz',
