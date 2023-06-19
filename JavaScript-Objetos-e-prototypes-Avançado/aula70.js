@@ -2,18 +2,49 @@
 
 // PADRÕES DE PROJETOS.
 // Factory functions / Constructor functions / Classes
-function criaPesssoa(nome, sobrenome) {
-  return {
-    nome,
-    sobrenome,
-    get nomeCompleto() {
-      return `${this.nome} ${this.sobrenome}`;
-    }
-  }
+
+// Factory functions 
+// function criaPesssoa(nome, sobrenome) {
+//   return {
+//     nome,
+//     sobrenome,
+//     get nomeCompleto() {
+//       return `${this.nome} ${this.sobrenome}`;
+//     }
+//   }
+// }
+
+// const p1 = criaPesssoa('Davi', 'Jesus');
+// console.log(p1.nomeCompleto)
+
+// Constructor functions 
+
+function Pessoa(nome, sobrenome) {
+  this.nome = nome;
+  this.sobrenome = sobrenome;
 }
 
-const p1 = criaPesssoa('Davi', 'Jesus');
-console.log(p1.nomeCompleto)
+// A palavra new vai criar um objeto vazio
+// new Também vai pegar a palavra this 
+const p2 = new Pessoa('Davi', 'Jesus');
+p2.nome = 'Outra coisa'
+const p3 = new Pessoa('Davi', 'Jesus');
+console.log(p2);
+console.log(p3);
+
+
+// PARA TRAVAR A ALTERAÇÃO PARA NÃO MEXER PODEMOS USAR O SEGUINTE CÓDIGO. 
+
+// Object.freeze(nomeDoObjeto)
+
+
+
+
+// const p3 = {};
+// p3.nome = 'Davi';
+
+
+
 
 // /////////////////
 // Metodos são funcões que estão dentro do objeto que executão ações.
