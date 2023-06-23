@@ -3,7 +3,12 @@
 // utilizando Object.assign
 // copiando um objeto no outro
 // utilizando Object.key
+// utilizando Object.freeze
+
 const produto = { nome: 'Caneca', preco: 1.8 };
+Object.freeze(produto);
+produto.nome = 'Outro nome';
+console.log(produto)
 
 
 // const caneca = { nome: produto.nome, preco: produto.preco };
