@@ -1,10 +1,11 @@
 // Métodos úteis para objetos
 // utilizando spred operation
+// utilizando Object.assign
 const produto = {nome: 'Caneca', preco: 1.8};
-const novoValor = { ...produto };
+const caneca = Object.assign({}, produto, { material: 'porcelana' })
 
-novoValor.nome = 'Davi';
-novoValor.preco = 'Muito caro !!!!!';
+caneca.nome = 'Caneca de programador';
+caneca.preco = 1.9;
 
 console.log(produto)
-console.log(novoValor)
+console.log(caneca)
