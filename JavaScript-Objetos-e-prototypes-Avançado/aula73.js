@@ -7,13 +7,30 @@
 // Object.getOwnPropertyDescriptor(o, 'prop')
 //Object.getOwnPropertyDescriptor >> retorna o que essa propiedade é 
 
+// const aluno = { nome:'Ana', idade: 14};
+
+
+// const copia = {
+//   ...aluno,
+//   sobreNome: 'tals',
+//   profissão: 'tals'
+// };
+
+// // console.log(aluno, copia);
+
+// copia.nome = 'Davi';
+
+// console.log( 'Este é o aluno >>>>',aluno, '   está é a copia >>>', copia);
+
 
 // utilizando Object.values
+// utilizando Object.entries
+// para obter os dois resultados
 // com esse Object.value nos obtemos os valores ao invés das chaves que era quando tinhamos os no Object.keys 
 
-const produto = { nome: 'Caneca', preco: 1.8 };
+// const produto = { nome: 'Caneca', preco: 1.8 };
 // console.log(Object.keys(produto))
-console.log(Object.values(produto))
+// console.log(Object.values(produto))
 
 
 // Object.defineProperty(produto, 'nome', {
