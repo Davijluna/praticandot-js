@@ -57,8 +57,13 @@
 const produto ={ nome: 'caneca', preco: 1.8 };
 const copia = Object.assign({}, produto,  { nome: 'prato', preco: 2.9 } )
 
-// console.log(produto)
-
-for([chave, values] of Object.entries(copia)) {
+console.log(produto)
+podemos retirar o let que funciona da mesma forma.
+for(let [chave, values] of Object.entries(copia)) {
   console.log(chave, values)
+}
+
+// mais uma forma de desestruturação usando  "[0] e [1] etc."
+for(let valor of Object.entries(copia)) {
+  console.log(valor[0], valor[1])
 }
