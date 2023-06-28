@@ -58,7 +58,7 @@ const produto ={ nome: 'caneca', preco: 1.8 };
 const copia = Object.assign({}, produto,  { nome: 'prato', preco: 2.9 } )
 
 console.log(produto)
-podemos retirar o let que funciona da mesma forma.
+// podemos retirar o let que funciona da mesma forma.
 for(let [chave, values] of Object.entries(copia)) {
   console.log(chave, values)
 }
