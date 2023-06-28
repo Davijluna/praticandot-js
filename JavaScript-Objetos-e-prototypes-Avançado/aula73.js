@@ -7,7 +7,7 @@
 // Object.getOwnPropertyDescriptor(o, 'prop')
 //Object.getOwnPropertyDescriptor >> retorna o que essa propiedade é 
 // const aluno = { nome:'Ana', idade: 14};
-iniciando aula
+
 
 
 // const copia = {
@@ -53,3 +53,12 @@ iniciando aula
 
 // console.log(produto)
 // console.log(caneca)
+
+const produto ={ nome: 'caneca', preco: 1.8 };
+const copia = Object.assign({}, produto,  { nome: 'prato', preco: 2.9 } )
+
+// console.log(produto)
+
+for([chave, values] of Object.entries(copia)) {
+  console.log(chave, values)
+}
