@@ -6,8 +6,8 @@
 // utilizando Object.freeze
 // Object.getOwnPropertyDescriptor(o, 'prop')
 //Object.getOwnPropertyDescriptor >> retorna o que essa propiedade é 
-
 // const aluno = { nome:'Ana', idade: 14};
+iniciando aula
 
 
 // const copia = {
