@@ -6,10 +6,13 @@ const cpfLimpo = CPF.replace(/\D+/g, '');
 let numero = cpfLimpo
 
 let num2 = 10
+let num3 = 10
 let num = []
 let recebe;
 let convert = 0
 let total = 0;
+
+let somaReduce;
 
 
 for(let index = 0; index < numero.length; index += 1) {
@@ -22,8 +25,10 @@ for(let index = 0; index < numero.length; index += 1) {
     num2 -= 1
   }
   // num = 0
-  console.log(total)
+  
 }
+somaReduce = 11 - (total % 11)
+console.log(somaReduce)
 
 
 
