@@ -5,17 +5,22 @@ const cpfLimpo = CPF.replace(/\D+/g, '');
 
 let numero = cpfLimpo
 
-let num2 = 11
+let num2 = 10
 let num = []
 let recebe;
 let convert = 0
+let total = 0;
 
 
 for(let index = 0; index < numero.length; index += 1) {
 
   num += numero[index] * num2
+  convert = (Number(num))
+  total += convert
+  num = ''
+  convert = 0
   num2 -= 1
-  convert = (Number(num)) + convert
+  // num = 0
 
   console.log(convert)
 }
