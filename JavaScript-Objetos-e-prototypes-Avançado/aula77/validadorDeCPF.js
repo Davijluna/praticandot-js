@@ -13,16 +13,16 @@ let total = 0;
 
 
 for(let index = 0; index < numero.length; index += 1) {
-
-  num += numero[index] * num2
-  convert = (Number(num))
-  total += convert
-  num = ''
-  convert = 0
-  num2 -= 1
+  if(num2 >= 2) {
+    num += numero[index] * num2
+    convert = (Number(num))
+    total += convert
+    num = ''
+    convert = 0
+    num2 -= 1
+  }
   // num = 0
-
-  console.log(convert)
+  console.log(total)
 }
 
 
