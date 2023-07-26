@@ -1,46 +1,73 @@
 // Criando um validador de CPF.
-
+/**
+ * Recebe os CPFs para verificar.
+ */
 const CPF = '705.484.450-52'
+/**
+ * Limpando os caracteres que não são números
+ * 
+ */
 const cpfLimpo = CPF.replace(/\D+/g, '');
-
 let numero = cpfLimpo
 
 let num2 = 10
-let num3 = 10
-let num = []
+let num3 = 11
+
+let primeiro = 0
+let segundo = 0
+
 let recebe;
-let convert = 0
-let total = 0;
+let convertPrimeiro = 0
+let convertSegundo = 0
+let totalPrimeiro = 0;
+let totalSegundo = 0;
 
 let somaReduce;
 
 
 for(let index = 0; index < numero.length; index += 1) {
+  if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
+    console.log('CPF inválido !!!!')
+  } else {
   if(num2 >= 2) {
-    num += numero[index] * num2
-    convert = (Number(num))
-    total += convert
-    num = ''
-    convert = 0
-    num2 -= 1
+      primeiro += numero[index] * num2
+      convertPrimeiro = (Number(primeiro))
+      totalPrimeiro += convertPrimeiro
+      primeiro = '';
+      convertPrimeiro = 0
+      num2 -= 1
+    }
   }
-  // num = 0
+}
+
+for(let index = 0; index < numero.length; index += 1) {
+  if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
+    console.log('CPF inválido !!!!')
+  } else {
+    if(num3 >= 2) {
+      segundo += numero[index] * num3
+      convertSegundo = (Number(segundo))
+      totalSegundo += convertSegundo
+      segundo = '';
+      convertSegundo = 0
+      num3 -= 1
+    } 
+  }
   
 }
-somaReduce = 11 - (total % 11)
-console.log(somaReduce)
+const somaReducePrimeiro = 11 - (totalPrimeiro % 11)
+const somaReduceSegundo = 11 - (totalSegundo % 11)
 
+const valorFinal1 = somaReducePrimeiro >= 10 ? 0 : somaReducePrimeiro
+const valorFinal2 = somaReduceSegundo >= 10 ? 0 : somaReduceSegundo
 
+// console.log(numero.charAt(numero.length - 1))
 
+if(somaReduceSegundo === Number(numero.charAt(numero.length - 1)) && somaReducePrimeiro === Number(numero.charAt(numero.length - 2))) {
+ console.log('CPF Válido !!!')
+} else {
+  console.log('CPF não Válido')
+}
 
-
-
-// const arraycpf = Array.from(cpfLimpo)
-// let coletaNumber = 0;
-
-//   for(const contador of arraycpf) {
-//     coletaNumber += parseInt(contador)
-//   }
-
-// console.log(coletaNumber);
+// console.log(somaReducePrimeiro, somaReduceSegundo)
 
