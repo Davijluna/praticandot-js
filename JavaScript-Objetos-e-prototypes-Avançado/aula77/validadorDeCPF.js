@@ -16,7 +16,8 @@ ValidaCpf.prototype.Valida = function() {
 
   const cpfParcial = this.cpfLimpo.slice(0, -2)
   const digito1 = this.criaDigito(cpfParcial);
-  console.log(digito1)
+  const digito2 = this.criaDigito(cpfParcial + digito1)
+  console.log(digito2)
   return true;
 };
 
