@@ -12,13 +12,17 @@ function ValidaCpf(cpfEnviado) {
 
 ValidaCpf.prototype.Valida = function() {
   if(typeof this.cpfLimpo === 'undefined') return false;
-  if(this.cpfLimpo.length !== 11) return false
+  if(this.cpfLimpo.length !== 11) return false;
+  if(this.isSequencia()) return false;
 
   const cpfParcial = this.cpfLimpo.slice(0, -2)
   const digito1 = this.criaDigito(cpfParcial);
   const digito2 = this.criaDigito(cpfParcial + digito1)
-  console.log(digito2)
-  return true;
+
+  const novoCpf = cpfParcial + digito1 + digito2;
+  console.log(novoCpf)
+  
+  return novoCpf === this.cpfLimpo;
 };
 
 ValidaCpf.prototype.criaDigito = function(cpfParcial) {
@@ -30,14 +34,18 @@ ValidaCpf.prototype.criaDigito = function(cpfParcial) {
     return acc;
   }, 0);
   const digito = 11 - (total % 11);
-  return digito > 9 ? 0 : digito;
+  return digito > 9 ? '0' : String(digito);
 };
+
+ValidaCpf.prototype.isSequencia = function() {
+  const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length);
+  return sequencia === this.cpfLimpo;
+}
 
 
 const cpf = new ValidaCpf('705.484.450-52');
 // console.log(cpf.cpfLimpo)
 console.log(cpf.Valida())
-
 // /**
 //  * Recebe os CPFs para verificar.
 //  */
