@@ -13,8 +13,25 @@ function ValidaCpf(cpfEnviado) {
 ValidaCpf.prototype.Valida = function() {
   if(typeof this.cpfLimpo === 'undefined') return false;
   if(this.cpfLimpo.length !== 11) return false
+
+  const cpfParcial = this.cpfLimpo.slice(0, -2)
+  const digito1 = this.criaDigito(cpfParcial);
+  console.log(digito1)
   return true;
 };
+
+ValidaCpf.prototype.criaDigito = function(cpfParcial) {
+  const cpfArray = Array.from(cpfParcial);
+  let regressivo = cpfArray.length + 1;
+  const total = cpfArray.reduce((acc, curr) => {
+    acc += (regressivo * Number(curr));
+    regressivo -= 1;
+    return acc;
+  }, 0);
+  const digito = 11 - (total % 11);
+  return digito > 9 ? 0 : digito;
+};
+
 
 const cpf = new ValidaCpf('705.484.450-52');
 // console.log(cpf.cpfLimpo)
