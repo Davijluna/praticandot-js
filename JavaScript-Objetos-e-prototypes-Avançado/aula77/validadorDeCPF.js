@@ -2,7 +2,7 @@
 /**
  * Recebe os CPFs para verificar.
  */
-const CPF = '705.484.450-52'
+const CPF = '111.111.111-11'
 /**
  * Limpando os caracteres que não são números
  * 
@@ -23,7 +23,6 @@ let totalPrimeiro = 0;
 let totalSegundo = 0;
 
 let somaReduce;
-
 
 for(let index = 0; index < numero.length; index += 1) {
   if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
@@ -61,13 +60,11 @@ const somaReduceSegundo = 11 - (totalSegundo % 11)
 const valorFinal1 = somaReducePrimeiro >= 10 ? 0 : somaReducePrimeiro
 const valorFinal2 = somaReduceSegundo >= 10 ? 0 : somaReduceSegundo
 
-// console.log(numero.charAt(numero.length - 1))
-
 if(somaReduceSegundo === Number(numero.charAt(numero.length - 1)) && somaReducePrimeiro === Number(numero.charAt(numero.length - 2))) {
  console.log('CPF Válido !!!')
 } else {
   console.log('CPF não Válido')
 }
 
-// console.log(somaReducePrimeiro, somaReduceSegundo)
+// Código do Professor 
 
