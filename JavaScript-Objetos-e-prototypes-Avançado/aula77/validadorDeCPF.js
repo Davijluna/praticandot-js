@@ -20,7 +20,6 @@ ValidaCpf.prototype.Valida = function() {
   const digito2 = this.criaDigito(cpfParcial + digito1)
 
   const novoCpf = cpfParcial + digito1 + digito2;
-  console.log(novoCpf)
   
   return novoCpf === this.cpfLimpo;
 };
