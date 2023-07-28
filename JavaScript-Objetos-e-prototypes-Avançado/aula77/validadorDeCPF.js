@@ -1,116 +1,70 @@
-// // Criando um validador de CPF.
+// Criando um validador de CPF.
+/**
+ * Recebe os CPFs para verificar.
+ */
+const CPF = '705.484.450-52'
+/**
+ * Limpando os caracteres que não são números
+ * 
+ */
+const cpfLimpo = CPF.replace(/\D+/g, '');
+let numero = cpfLimpo
 
-// Código do Professor 
-function ValidaCpf(cpfEnviado) {
-  Object.defineProperty(this, 'cpfLimpo', {
-    enumerable: true,
-    get: function() {
-      return cpfEnviado.replace(/\D+/g, '')
+let num2 = 10
+let num3 = 11
+
+let primeiro = 0
+let segundo = 0
+
+let recebe;
+let convertPrimeiro = 0
+let convertSegundo = 0
+let totalPrimeiro = 0;
+let totalSegundo = 0;
+
+let somaReduce;
+
+for(let index = 0; index < numero.length; index += 1) {
+  if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
+    console.log('CPF inválido !!!!')
+  } else {
+  if(num2 >= 2) {
+      primeiro += numero[index] * num2
+      convertPrimeiro = (Number(primeiro))
+      totalPrimeiro += convertPrimeiro
+      primeiro = '';
+      convertPrimeiro = 0
+      num2 -= 1
     }
-  })
+  }
 }
 
-ValidaCpf.prototype.Valida = function() {
-  if(typeof this.cpfLimpo === 'undefined') return false;
-  if(this.cpfLimpo.length !== 11) return false;
-  if(this.isSequencia()) return false;
-
-  const cpfParcial = this.cpfLimpo.slice(0, -2)
-  const digito1 = this.criaDigito(cpfParcial);
-  const digito2 = this.criaDigito(cpfParcial + digito1)
-
-  const novoCpf = cpfParcial + digito1 + digito2;
+for(let index = 0; index < numero.length; index += 1) {
+  if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
+    console.log('CPF inválido !!!!')
+  } else {
+    if(num3 >= 2) {
+      segundo += numero[index] * num3
+      convertSegundo = (Number(segundo))
+      totalSegundo += convertSegundo
+      segundo = '';
+      convertSegundo = 0
+      num3 -= 1
+    } 
+  }
   
-  return novoCpf === this.cpfLimpo;
-};
-
-ValidaCpf.prototype.criaDigito = function(cpfParcial) {
-  const cpfArray = Array.from(cpfParcial);
-  let regressivo = cpfArray.length + 1;
-  const total = cpfArray.reduce((acc, curr) => {
-    acc += (regressivo * Number(curr));
-    regressivo -= 1;
-    return acc;
-  }, 0);
-  const digito = 11 - (total % 11);
-  return digito > 9 ? '0' : String(digito);
-};
-
-ValidaCpf.prototype.isSequencia = function() {
-  const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length);
-  return sequencia === this.cpfLimpo;
 }
+const somaReducePrimeiro = 11 - (totalPrimeiro % 11)
+const somaReduceSegundo = 11 - (totalSegundo % 11)
 
+const valorFinal1 = somaReducePrimeiro >= 10 ? 0 : somaReducePrimeiro
+const valorFinal2 = somaReduceSegundo >= 10 ? 0 : somaReduceSegundo
 
-const cpf = new ValidaCpf('705.484.450-52');
-// console.log(cpf.cpfLimpo)
-console.log(cpf.Valida())
-// /**
-//  * Recebe os CPFs para verificar.
-//  */
-// const CPF = '705.484.450-52'
-// /**
-//  * Limpando os caracteres que não são números
-//  * 
-//  */
-// const cpfLimpo = CPF.replace(/\D+/g, '');
-// let numero = cpfLimpo
-
-// let num2 = 10
-// let num3 = 11
-
-// let primeiro = 0
-// let segundo = 0
-
-// let recebe;
-// let convertPrimeiro = 0
-// let convertSegundo = 0
-// let totalPrimeiro = 0;
-// let totalSegundo = 0;
-
-// let somaReduce;
-
-// for(let index = 0; index < numero.length; index += 1) {
-//   if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
-//     console.log('CPF inválido !!!!')
-//   } else {
-//   if(num2 >= 2) {
-//       primeiro += numero[index] * num2
-//       convertPrimeiro = (Number(primeiro))
-//       totalPrimeiro += convertPrimeiro
-//       primeiro = '';
-//       convertPrimeiro = 0
-//       num2 -= 1
-//     }
-//   }
-// }
-
-// for(let index = 0; index < numero.length; index += 1) {
-//   if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
-//     console.log('CPF inválido !!!!')
-//   } else {
-//     if(num3 >= 2) {
-//       segundo += numero[index] * num3
-//       convertSegundo = (Number(segundo))
-//       totalSegundo += convertSegundo
-//       segundo = '';
-//       convertSegundo = 0
-//       num3 -= 1
-//     } 
-//   }
-  
-// }
-// const somaReducePrimeiro = 11 - (totalPrimeiro % 11)
-// const somaReduceSegundo = 11 - (totalSegundo % 11)
-
-// const valorFinal1 = somaReducePrimeiro >= 10 ? 0 : somaReducePrimeiro
-// const valorFinal2 = somaReduceSegundo >= 10 ? 0 : somaReduceSegundo
-
-// if(somaReduceSegundo === Number(numero.charAt(numero.length - 1)) && somaReducePrimeiro === Number(numero.charAt(numero.length - 2))) {
-//  console.log('CPF Válido !!!')
-// } else {
-//   console.log('CPF não Válido')
-// }
+if(somaReduceSegundo === Number(numero.charAt(numero.length - 1)) && somaReducePrimeiro === Number(numero.charAt(numero.length - 2))) {
+ console.log('CPF Válido !!!')
+} else {
+  console.log('CPF não Válido')
+}
 
 
 // Rascunho para melhor compreensão da solução feita em aula.
