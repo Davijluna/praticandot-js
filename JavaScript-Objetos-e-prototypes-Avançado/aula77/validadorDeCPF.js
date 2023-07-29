@@ -2,7 +2,9 @@
 /**
  * Recebe os CPFs para verificar.
  */
-const CPF = '705.484.450-52'
+// const CPF = '705.484.450-52'.
+// melhorar validação para que não permita numeros repetidos
+const CPF = '111.111.111-11'
 /**
  * Limpando os caracteres que não são números
  * 
