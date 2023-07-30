@@ -2,7 +2,7 @@
 /**
  * Recebe os CPFs para verificar.
  */
-// const CPF = '705.484.450-52'.
+// const CPF = '705.484.450-52'
 // melhorar validação para que não permita numeros repetidos
 const CPF = '111.111.111-11'
 /**
@@ -27,9 +27,10 @@ let totalSegundo = 0;
 let somaReduce;
 
 for(let index = 0; index < numero.length; index += 1) {
-  if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') {
-    console.log('CPF inválido !!!!')
-  } else {
+  const numberRepeat = cpfLimpo[0].repeat(cpfLimpo.length)
+  if(cpfLimpo != 11 && cpfLimpo.length === '00000000000') console.log('CPF inválido !!!!')
+  if(numberRepeat === cpfLimpo) console.log('CPF inválido !')
+  else {
   if(num2 >= 2) {
       primeiro += numero[index] * num2
       convertPrimeiro = (Number(primeiro))
