@@ -8,12 +8,14 @@ class Carro {
   }
 // o set precisa ter um parâmetro para receber.
   set velocidade(valor) {
+    console.log('Setter')
     if(typeof valor != 'number') return;
     if(valor >= 100 || valor <= 0) return;
     this[_velocidade] = valor;
   }
 
   get velocidade() {
+    console.log('Getter')
     return this[_velocidade];
   }
 
@@ -34,6 +36,7 @@ for(let i = 0; i <= 200; i+= 1) {
   c1.acelerar();
 }
 
+c1.velocidade = 10;
 c1.velocidade = 10;
 
 console.log(c1.velocidade)
