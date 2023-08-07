@@ -1,4 +1,4 @@
-// Hetança com classes.
+// Herança com classes.
 
 class DispositoEletronico {
   constructor(nome) {
@@ -25,7 +25,7 @@ class Smartphone extends DispositoEletronico {
   // neta parte só de chamar o super nós já estamos extendendo o nome e o ligado com o booleano
   constructor(nome, cor, modelo) {
     super(nome);
-    
+
     this.cor = cor;
     this.modelo = modelo;
   }
