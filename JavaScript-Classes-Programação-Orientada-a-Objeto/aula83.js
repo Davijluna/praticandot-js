@@ -1,8 +1,14 @@
 // Métodos de instância e estâticos.
+
+function teste() {
+  console.log('Estou aqui')
+}
+
 class ControleRemoto {
   constructor(tv) {
     this.tv = tv;
     this.volume = 0
+    teste()
   }
 
    // Método de instância
@@ -16,7 +22,7 @@ class ControleRemoto {
   }
 
   // Método estático
-  trocaPilha() {
+  static trocaPilha() {
     console.log('vou trocar!!!!')
   }
 }
@@ -24,8 +30,10 @@ class ControleRemoto {
 const controle2 = new ControleRemoto('LG')
 const controle1 = new ControleRemoto('LG')
 
-controle1.aumentarVolume();
+controle2.aumentarVolume();
 controle1.aumentarVolume();
 controle1.aumentarVolume();
 
 console.log(controle1, controle2)
+ControleRemoto.trocaPilha();
+
