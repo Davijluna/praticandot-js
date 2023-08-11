@@ -19,6 +19,6 @@ class ValidaCPF {
     return 'Cheguei Aqui'
   }
 }
-
+// ver para mais tarde.
 const validacpf = new ValidaCPF(cpf)
 console.log(validacpf.valida());
