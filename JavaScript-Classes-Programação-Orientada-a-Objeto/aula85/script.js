@@ -12,7 +12,26 @@ class ValidaFormulario {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('Formulário não enviado')
+    const camposValidos = this.camposSaoValidos();
+  }
+
+  camposSaoValidos() {
+    let valid = true;
+
+    for(let campo of this.formulario.querySelectorAll('.validar')) {
+      if(!campo.value) {
+        this.criaError(campo, "Campo tal não pode estar em branco")
+        valid = false;
+      }
+
+    }
+  }
+  criaError(campo, msg) {
+
+    const div = document.createElement('div');
+    div.innerHTML = msg;
+    div.classList.add('error-text');
+    campo.insertAdjacentElement('afterend', div);
   }
 }
 
