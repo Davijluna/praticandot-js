@@ -28,7 +28,7 @@ class ValidaCPF {
 
     for(let stringNumerica of cpfSemDigitos ) {
       total += reverso * Number(stringNumerica);
-      console.log(typeof total);
+      // console.log(typeof total);
       reverso -= 1;
     }
 
@@ -41,15 +41,17 @@ class ValidaCPF {
     if(typeof this.cpfLimpo !== 'string') return false;
     if(this.éSequência()) return false;
     this.geraNovoCPF();
-    console.log(this.novoCPF)
+    // console.log(this.novoCPF)
 
     return this.novoCPF === this.cpfLimpo;
   }
 }
 // ver para mais tarde.
-// const validacpf = new ValidaCPF('358.484.248-45');
+const validacpf = new ValidaCPF('358.484.248-45');
 // console.log(validacpf.valida());
 
-// if(validacpf.valida()) {
-//   console.log('CPF VALIDO ');
-// } 
+if(validacpf.valida()) {
+  console.log('CPF VALIDO');
+} else {
+  console.log('CPF INVÁLIDO');
+}
