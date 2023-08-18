@@ -22,6 +22,7 @@ class ValidaCPF {
     this.novoCPF = cpfSemDigitos + digito1 + digito2;
   }
 // Quando o metodo não possue a palavra this ele pode ser static.
+// methodos static não têm acesso ao this da class.
   static geraDigito(cpfSemDigitos) {
     let total = 0;
     let reverso = cpfSemDigitos.length + 1;
