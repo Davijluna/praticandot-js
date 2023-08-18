@@ -55,3 +55,4 @@ if(validacpf.valida()) {
 } else {
   console.log('CPF INVÁLIDO');
 }
+// rever está aula..
