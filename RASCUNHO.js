@@ -1,18 +1,28 @@
 // CLASSES 
-
-class Instrumento {
-  constructor(nome, categoria,) {
+class Person {
+  constructor(nome, profissão) {
     this.nome = nome;
-    this.categoria = categoria;
+    this.profissão = profissão;
   }
 
-  nameIntrument() {
-    console.log(this.nome, 'categoria', this.categoria)
+  falaProfissao() {
+    console.log(`${this.nome} tèm a profissão de ${this.profissão}`)
   }
 }
 
-const v1 = new Instrumento('violino', 'cordas');
+class Davi extends Person {
+  constructor(nome, profissão) {
+    super(nome, profissão);
+  }
+// nesta parte a função fica sobre escrita.
+  falaProfissao() {
+    console.log(`${this.nome} tèm a profissão de ${this.profissão} FullStack`)
+  }
+}
 
-console.log(v1.nameIntrument());
+const funcionario = new Person('Colega', 'Progamador')
+const davi = new Davi('Davi', 'Programador');
 
+funcionario.falaProfissao()
+davi.falaProfissao()
 
