@@ -6,11 +6,28 @@ function rand(min, max) {
 }
 
 function esperaAi(msg, tempo) {
-  setTimeout(() => {
-     console.log(msg);
-  }, tempo)
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      //  console.log(msg);
+      resolve(msg);
+    }, tempo)
+  });
 }
 
-esperaAi('frase1', rand(1, 3))
-esperaAi('frase2', rand(1, 3))
-esperaAi('frase3', rand(1, 3))
+esperaAi('frase 1', rand(1, 3))
+  .then(resposta => {
+    console.log(resposta);
+    return esperaAi('frase 2', rand(1, 3))
+  })
+  .then(resposta => {
+    console.log(resposta)
+    return esperaAi('frase 3', rand(1, 3));
+  })
+  .then(resposta => {
+    console.log(resposta);
+  }).then(() => {
+    console.log('ultimo a ser exibido.')
+  })
+  .catch();
+// esperaAi('frase2', rand(1, 3))
+// esperaAi('frase3', rand(1, 3))
