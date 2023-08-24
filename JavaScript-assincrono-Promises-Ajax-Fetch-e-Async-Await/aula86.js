@@ -1,4 +1,22 @@
 // Promises
+// Documentação usada 
+// Math.random.
+/*
+
+ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+ */
+// Math.floor.
+/*
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+ */
+// then.
+/*
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+ */
+//  catch.
+/*
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch
+ */
 function rand(min, max) {
   min *= 1000;
   max *= 1000;
