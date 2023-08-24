@@ -7,6 +7,7 @@ function rand(min, max) {
 
 function esperaAi(msg, tempo) {
   return new Promise((resolve, reject) => {
+    if(typeof msg !== 'string') reject('BAD VALUE');
     setTimeout(() => {
       //  console.log(msg);
       resolve(msg);
@@ -21,13 +22,17 @@ esperaAi('frase 1', rand(1, 3))
   })
   .then(resposta => {
     console.log(resposta)
-    return esperaAi('frase 3', rand(1, 3));
+    return esperaAi( 11111, rand(1, 3));
   })
   .then(resposta => {
     console.log(resposta);
   }).then(() => {
     console.log('ultimo a ser exibido.')
   })
-  .catch();
+  .catch(e => {
+    console.log('ERROR', e)
+  });
+
+  console.log('fim')
 // esperaAi('frase2', rand(1, 3))
 // esperaAi('frase3', rand(1, 3))
