@@ -1,5 +1,22 @@
 // Métodos úteis para Promises.
 
+// METODOS PASSADO EM AULA
+// Promise.all Promise.race Promise.resolve Promese.reject
+
+// LINK DA DOCUMENTAÇÃO 
+/*
+Promise.all
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+
+Promise.race
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
+
+Promise.resolve
+
+
+Promese.reject
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject
+ */
 
 function rand(min, max) {
   min *= 1000;
@@ -30,6 +47,3 @@ Promise.all(promise)
 }).catch(function(e) {
   console.log(e, 'foi mostrado um erro')
 });
-
-// METODOS PASSADO EM AULA
-// Promise.all Promise.race Promise.resolve Promese.reject
