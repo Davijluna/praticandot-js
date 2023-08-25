@@ -34,14 +34,14 @@ function esperaAi(msg, tempo) {
 }
 
 const promise = [
-  'primeiro valor',
+  // 'primeiro valor',
   esperaAi('Promise 1', 3000),
   esperaAi('Promise 2', 500),
   esperaAi('Promise 3', 10000),
-  'outro valor'
+  // 'outro valor'
 ];
 
-Promise.all(promise)
+Promise.race(promise)
 .then(function(valor) {
   console.log(valor)
 }).catch(function(e) {
