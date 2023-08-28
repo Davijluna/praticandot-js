@@ -11,7 +11,7 @@ axios('pessoas.json')
     const tr = document.createElement('tr');
    
 
-
+  // rever aula
   // Depois disso inserimos essas tds como filhas de tr
     let td = document.createElement('td');
     td.innerHTML = pessoa.nome;
