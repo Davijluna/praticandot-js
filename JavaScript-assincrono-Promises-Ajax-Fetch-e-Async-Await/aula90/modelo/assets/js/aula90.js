@@ -57,3 +57,7 @@ function carregaResultado(response) {
   resultado.innerHTML = response
 }
 
+fetch('pagina1.html').then(resposta => {
+  if(resposta.status !== 200) throw new Error('Error de resposta')
+})
+.catch(e => console.log(e));
