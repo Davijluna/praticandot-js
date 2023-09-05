@@ -1,3 +1,4 @@
+// FEITA REVISÃO.
 // Fecth API (GET)
 
 // XMLHttpResquest (GET) + Promises
