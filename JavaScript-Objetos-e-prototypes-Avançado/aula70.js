@@ -18,7 +18,7 @@
 // console.log(p1.nomeCompleto)
 
 // Constructor functions 
-
+// revisar
 function Pessoa(nome, sobrenome) {
   this.nome = nome;
   this.sobrenome = sobrenome;
