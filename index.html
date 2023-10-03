@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="js">react</div>
+  <div class="js">angular</div>
+  <div class="js">typescript</div>
+  <div class="js">es6</div>
+</body>
+<script>
+  var js = document.getElementsByClassName('js')
+
+  for(let i = 0; i < js.length; i+=1) {
+      let texto = js[i].innerHTML;
+      js[i].innerHTML = 'curso '+ texto + ' js'
+  }
+  
+</script>
+
+</html>
