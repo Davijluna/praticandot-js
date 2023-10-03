@@ -14,10 +14,16 @@
 <script>
   var js = document.getElementsByClassName('js')
 
-  for(let i = 0; i < js.length; i+=1) {
-      let texto = js[i].innerHTML;
-      js[i].innerHTML = 'curso '+ texto + ' js'
-  }
+  var array = [1, 2, 3, 4]
+
+  array.forEach((eletemt, index, e) => {
+    console.log(eletemt, index, e)
+  });
+
+  // for(let i = 0; i < js.length; i+=1) {
+  //     let texto = js[i].innerHTML;
+  //     js[i].innerHTML = 'curso '+ texto + ' js'
+  // }
   
 </script>
 
