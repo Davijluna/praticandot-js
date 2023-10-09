@@ -15,3 +15,10 @@
 
 // const num = Math.floor(-45.01)
 // console.log(num)
+
+let numero = 0
+
+for(let i = 0; numero.length <= 10; i += 1) {
+  numero += i
+  console.log(numero)
+}
