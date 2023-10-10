@@ -16,8 +16,12 @@
 // const num = Math.floor(-45.01)
 // console.log(num)
 
-let fruta = "abacate"
-for(let i = 0; i < fruta.length; i += 1) {
-  let novaLet = fruta.replace(/a/g, "o")
-  console.log(novaLet)
-}
+// let fruta = "abacate"
+// for(let i = 0; i < fruta.length; i += 1) {
+//   let novaLet = fruta.replace(/a/g, "o")
+//   console.log(novaLet)
+// }
+
+const str = "Twas the night before XmAs...";
+const newstr = str.replace(/xmas/i, "Substitui olha rs!!!!");
+console.log(newstr, '@@@@@@@');
