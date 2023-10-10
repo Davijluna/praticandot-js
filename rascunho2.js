@@ -16,9 +16,8 @@
 // const num = Math.floor(-45.01)
 // console.log(num)
 
-let numero = 0
-
-for(let i = 0; numero.length <= 10; i += 1) {
-  numero += i
-  console.log(numero)
+let fruta = "abacate"
+for(let i = 0; i < fruta.length; i += 1) {
+  let novaLet = fruta.replace(/a/g, "o")
+  console.log(novaLet)
 }
