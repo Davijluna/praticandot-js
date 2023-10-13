@@ -12,3 +12,5 @@ export {
   idade,
   soma
 }
+
+// podemos exportar tanto de manera completa usando todas de uma vez como de maneira individual 
