@@ -1,4 +1,4 @@
-[
+let arrayDeObjetos = [
   {
     id: '4b40a139-d4dc-4f09-822d-ec25e819a5ad',
     firstName: 'Sharonda',
@@ -13,3 +13,7 @@
     ]
   }
 ]
+
+for (const object of arrayDeObjetos) {
+  console.log(object.managers.length)
+}
