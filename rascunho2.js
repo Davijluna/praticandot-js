@@ -22,6 +22,13 @@
 //   console.log(novaLet)
 // }
 
-const str = "Twas the night before XmAs...";
-const newstr = str.replace(/xmas/i, "Substitui olha rs!!!!");
-console.log(newstr, '@@@@@@@');
+// const str = "Twas the night before XmAs...";
+// const newstr = str.replace(/xmas/i, "Substitui olha rs!!!!");
+// console.log(newstr, '@@@@@@@');
+
+const number = [1, 4, 7, 0, 9];
+const recebe = '';
+for (let i = 0; i < number.length; i +=1) {
+  recebe += number[i];
+  console.log(recebe)
+}
