@@ -26,9 +26,25 @@
 // const newstr = str.replace(/xmas/i, "Substitui olha rs!!!!");
 // console.log(newstr, '@@@@@@@');
 
-const number = [1, 4, 7, 0, 9];
-const recebe = '';
-for (let i = 0; i < number.length; i +=1) {
-  recebe += recebe.push(number[i]);
-  console.log(recebe)
-}
+// const number = [1, 4, 7, 0, 9];
+// const recebe = '';
+// for (let i = 0; i < number.length; i +=1) {
+//   recebe += recebe.push(number[i]);
+//   console.log(recebe)
+// }
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Digite um número: ', (number) => {
+  let antecessor = +number - 1;
+  let sucessor = +number + 1;
+  console.log(`O Antecessor de ${number} é ${antecessor} e o Sucessor de ${number} é ${sucessor}`)
+})
+
+
+
