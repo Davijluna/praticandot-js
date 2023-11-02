@@ -4,3 +4,4 @@ const number = [1, 4, 7, 0, 9];
 //   recebe += recebe.push(number[i]);
 //   console.log(recebe)
 // }
+// adicionar novos exercicos
