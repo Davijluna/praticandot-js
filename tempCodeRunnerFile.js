@@ -1,7 +1,12 @@
-const number = [1, 4, 7, 0, 9];
-// const recebe = '';
-// for (let i = 0; i < number.length; i +=1) {
-//   recebe += recebe.push(number[i]);
-//   console.log(recebe)
-// }
+const number = [1, 4, 9, 0, 2];
+let num = 0;
+
+for (let array of number) {
+
+  if(array > num) {
+    num = array
+  }
+  console.log(array, number, num)
+}
+
 // adicionar novos exercicos
