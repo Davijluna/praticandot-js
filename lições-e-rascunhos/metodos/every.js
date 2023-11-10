@@ -12,4 +12,5 @@ const isSubset = (array1, array2) => {
   return array2.every((element) => array1.includes(element));
 }
 
+
 console.log(isSubset([1, 3, 4, 5, 9, 7], [5, 9, 0]));
