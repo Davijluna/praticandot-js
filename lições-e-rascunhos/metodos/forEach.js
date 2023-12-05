@@ -13,12 +13,3 @@ const showData = (users) => {
 
 showData(data)
 
-let someShowData = data.some((user) => user.avaliacao)
-
-console.log(someShowData);
-
-data[0].avaliacao = true
-console.log(data)
-
-someShowData = data.some((user) => user.avaliacao)
-console.log(someShowData)
