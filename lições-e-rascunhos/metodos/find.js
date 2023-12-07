@@ -54,10 +54,17 @@
 
 const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
 
-const firstTroungh = numbers.filter((num) => num > 0).find((num, idx, arr) => {
-  if (idx > 0 && num >= arr[idx -1]) return false;
-  if (idx < arr.length - 1 && num >= arr[idx + 1 ]) return false;
-  return true;
-})
+function numero(value) {
+  return value > 2 } 
 
-console.log(firstTroungh)
+const teste = numbers.find((index) => index > -2);
+
+console.log(teste)
+
+// const firstTroungh = numbers.filter((num) => num > 0).find((num, idx, arr) => {
+//   if (idx > 0 && num >= arr[idx -1]) return false;
+//   if (idx < arr.length - 1 && num >= arr[idx + 1 ]) return false;
+//   return true;
+// })
+
+// console.log(firstTroungh)
