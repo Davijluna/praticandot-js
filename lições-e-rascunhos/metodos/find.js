@@ -52,14 +52,14 @@
 
 // Usando o terceiro argumento de callbackFn
 
-const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
+// const numbers = [3, -1, 1, 4, 1, 5, 9, 2, 6];
 
-function numero(value) {
-  return value > 2 } 
+// function numero(value) {
+//   return value > 2 } 
 
-const teste = numbers.find((index) => index > -2);
+// const teste = numbers.find((index) => index > -2);
 
-console.log(teste)
+// console.log(teste)
 
 // const firstTroungh = numbers.filter((num) => num > 0).find((num, idx, arr) => {
 //   if (idx > 0 && num >= arr[idx -1]) return false;
@@ -68,3 +68,14 @@ console.log(teste)
 // })
 
 // console.log(firstTroungh)
+
+
+const arrayLike = {
+  length: 3,
+  "-1": 0.1,
+  0: 2,
+  1: 7.3,
+  2: 4,
+}
+
+console.log(Array.prototype.find.call(arrayLike, (x) => Number.isInteger(x)));
