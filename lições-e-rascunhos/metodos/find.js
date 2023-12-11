@@ -81,3 +81,4 @@ const arrayLike = {
 console.log(Array.prototype.find.call(arrayLike, (x) => Number.isInteger(x)));
 // mais um teste para o método
 // mais um teste para o método
+// mais um teste para o método
