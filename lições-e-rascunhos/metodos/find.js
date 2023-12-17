@@ -1,6 +1,27 @@
 // Trabalhando com o metodo find
 
 
+// utilizando o include
+
+const array = [
+  {nome: "Davi", idade: 36, sexo: "masculino"},
+  {nome: "Maria", idade: 46, sexo: "feminino"},
+  {nome: "Fernando", idade:26, sexo: "masculino"},
+  {nome: "Ana", idade: 16, sexo: "feminino"},
+  {nome: "Sara", idade: 12, sexo: "feminino"},
+]
+
+function pessoa(array) {
+  array.forEach((user) => {
+    console.log(user.nome);
+  })
+};
+
+pessoa(array)
+
+
+
+
 // Utilizando find para encontrar o primeiro valor.
 // const array = [50, 100, 330, 104, 9]
 
@@ -70,12 +91,12 @@
 // console.log(firstTroungh)
 
 
-const arrayLike = {
-  length: 3,
-  "-1": 0.1,
-  0: 2,
-  1: 7.3,
-  2: 4,
-}
+// const arrayLike = {
+//   length: 3,
+//   "-1": 0.1,
+//   0: 2,
+//   1: 7.3,
+//   2: 4,
+// }
 
-console.log(Array.prototype.find.call(arrayLike, (x) => Number.isInteger(x)));
+// console.log(Array.prototype.find.call(arrayLike, (x) => Number.isInteger(x)));
