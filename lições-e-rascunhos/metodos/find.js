@@ -11,13 +11,27 @@ const array = [
   {nome: "Sara", idade: 12, sexo: "feminino"},
 ]
 
-function pessoa(array) {
-  array.forEach((user) => {
-    console.log(user.nome);
-  })
-};
+let myName = "Davi";
+ 
+const getName = (nameIndex, arrayNames) => {
+  const nameReturn = arrayNames.filter(name => name === nameIndex)
+  if(!nameIndex) {
+    return 'Nome não existe!'
+  }
+  if (nameReturn === nameIndex) {
+    return nameIndex
+  }
+}
 
-pessoa(array)
+console.log(getName(myName, array))
+
+// function pessoa(array) {
+//   array.forEach((user) => {
+//     console.log(user.nome);
+//   })
+// };
+
+// pessoa(array)
 
 
 
