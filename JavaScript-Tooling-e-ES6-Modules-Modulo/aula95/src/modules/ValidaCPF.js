@@ -1,7 +1,7 @@
 // Usando classes (Validando CPF)
 // const cpf = "358.484.248-45"
 
-class ValidaCPF {
+export default class ValidaCPF {
   constructor(cpfEnviando) {
     Object.defineProperty(this, 'cpfLimpo', {
       writable: false,
@@ -55,4 +55,3 @@ if(validacpf.valida()) {
 } else {
   console.log('CPF INVÁLIDO');
 }
-// rever está aula..
