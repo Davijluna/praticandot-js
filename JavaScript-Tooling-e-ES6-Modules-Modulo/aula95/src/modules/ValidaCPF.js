@@ -47,11 +47,13 @@ export default class ValidaCPF {
   }
 }
 // ver para mais tarde.
-const validacpf = new ValidaCPF('358.484.248-45');
-// console.log(validacpf.valida());
+// const validacpf = new ValidaCPF('358.484.248-45');
+// // console.log(validacpf.valida());
 
-if(validacpf.valida()) {
-  console.log('CPF VALIDO');
-} else {
-  console.log('CPF INVÁLIDO');
-}
+// if(validacpf.valida()) {
+//   console.log('CPF VALIDO');
+// } else {
+//   console.log('CPF INVÁLIDO');
+// }
+
+console.log('Cheguei aqui.')
