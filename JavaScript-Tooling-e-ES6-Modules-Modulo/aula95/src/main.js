@@ -7,4 +7,5 @@ import './assets/css/style.css';
   const gera = new GeraCPF();
   const cpfGerado = document.querySelector('.cpf-gerado')
   cpfGerado.innerHTML = gera.geraNovoCpf();
+  // adicionando comentario
 })();
