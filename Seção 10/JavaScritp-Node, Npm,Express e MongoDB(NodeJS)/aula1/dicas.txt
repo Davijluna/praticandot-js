@@ -1,0 +1,1 @@
+Os caminhos dos modulos que nos criamos nos prescisamos do caminho das pastas mas quando nos estamos vamos usar modulos padrão do Node e modulos que estalamos via NPM eles não requerem o caminho ex: o modulos path
