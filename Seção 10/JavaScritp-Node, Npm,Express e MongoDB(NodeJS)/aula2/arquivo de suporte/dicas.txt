@@ -1,0 +1,7 @@
+Temos duas variáveis internas que usamos no modulo.
+__filename > É o nome do arquivo atual.
+ __dirname > É o nome da pasta atual.
+
+ Para manipular função temos o modulo "path"
+
+ 
