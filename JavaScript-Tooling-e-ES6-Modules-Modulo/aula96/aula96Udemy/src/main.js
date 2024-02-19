@@ -1,3 +1,5 @@
-import formGeraSenha from '../modules/formGeraSenha';
+import button from "../modules/formGeraSenha";
 import './assets/css/style.css';
-formGeraSenha();
+button()
+
+
