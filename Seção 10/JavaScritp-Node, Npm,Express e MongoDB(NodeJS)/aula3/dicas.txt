@@ -1,1 +1,10 @@
 aula 3 da seção de node.
+
+comandos usados no terminal para o npm 
+npm install express
+npm install express -E
+npm install express --save-prod
+npm uninstall express
+
+2.      1.      0.
+major   minor   patch
