@@ -1,0 +1,3 @@
+Utilizamos os modulos do coração do Node
+"fs" e "path"
+Para indicar o caminho do arquivo usaremos uma função asincrona por nome de readdir.
