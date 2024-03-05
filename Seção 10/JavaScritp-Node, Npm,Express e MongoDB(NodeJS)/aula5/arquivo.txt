@@ -1,0 +1,2 @@
+JSON.stringify : converte o objeto para json
+JSON.parse : converte um arquivo json em objeto
