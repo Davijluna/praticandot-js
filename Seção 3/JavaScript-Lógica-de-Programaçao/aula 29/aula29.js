@@ -1,4 +1,4 @@
-const data = new Date('1987-06-03');
+const data = new Date('1993-06-03');
 
 const diaSemana = data.getDay() + 1
 
