@@ -20,11 +20,15 @@ const testeJSON = [
   }
 ]
 
-const jsonManipulado = JSON.stringify(testeJSON)
-const desconverterJson = JSON.parse(jsonManipulado)
-console.log(typeof testeJSON, 'está constante já é um objeto !!!!')
-console.log(typeof jsonManipulado, 'trasnforma uma string em objeto')
-console.log(typeof desconverterJson, 'transforma em objeto')
+const j = [{"nome":"Davi","idade":36,"sexo":"Masculino"}]
+
+// console.log(typeof j)
+// const jsonManipulado = JSON.stringify(testeJSON)
+const desconverterJson = JSON.stringify(j)
+console.log(desconverterJson)
+// console.log(typeof testeJSON, 'está constante já é um objeto !!!!')
+// console.log(typeof jsonManipulado, 'trasnforma uma string em objeto')
+// console.log(typeof desconverterJson, 'transforma em objeto')
 
 // try {
 //   const convertido = JSON.parse(testeJSON);
