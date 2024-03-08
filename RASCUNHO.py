@@ -15,7 +15,8 @@ def DIVISAO(D1, D2):
     DR = D1 / D2
     return DR
 
-print("Bem vindo à calculadora!")
+    print("Bem vindo à calculadora!")
+
 V1 = float(input("Insira o primeiro valor: "))
 V2 = float(input("Insira o segundo valor: "))
 OP = input("Digite '+' para soma, '-' para subtração, '*' para multiplicação ou '/' para divisão: ")
