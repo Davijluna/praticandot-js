@@ -1,10 +1,18 @@
 const express = require('express');
 const route = express.Router() // ? Utilizando router com express
+const homeController = require('./controllers/homeControllers') // ** Aqui eu importei o homeController do caminho mostrado.
+const contatoController = require('./controllers/contatoController')
 
-route.get('/', (req, res) => {
-  res.send(`<h1>Hello world</h1>
-  <form action="/" method="POST">
-  Nome do cliente: <input type="text" name="nome">
-  <button>Enviar o formulário</button>
-  </form>`);
-});
+// Rotas da Home
+route.get('/', homeController.paginaInicial);
+route.post('/', homeController.trataPost);
+
+// Rotas de contato
+route.get('/contato', contatoController.paginaInicial)
+
+// route.get('/', (req, res) => {
+// })
+
+
+
+module.exports = route;
