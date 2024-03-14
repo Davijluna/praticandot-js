@@ -1,7 +1,7 @@
 const express = require('express');
 const route = express.Router() // ? Utilizando router com express
-const homeController = require('./controllers/homeControllers') // ** Aqui eu importei o homeController do caminho mostrado.
-const contatoController = require('./controllers/contatoController')
+const homeController = require('./src/controllers/homeControllers') // ** Aqui eu importei o homeController do caminho mostrado.
+const contatoController = require('./src/controllers/contatoController')
 
 // Rotas da Home
 route.get('/', homeController.paginaInicial);
