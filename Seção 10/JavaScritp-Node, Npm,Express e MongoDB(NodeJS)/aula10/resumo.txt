@@ -1,5 +1,0 @@
-req.params -> parte que vem na rota da URL Ex: /profile/3
-req.query -> Vem na querystring /profile/?chave1=valor1/&chave2=valor2 etc ...
-req.body -> Vem na requisição do body method Post Put : O que receber no corpo da requisição irá vir
-OBS: se não fizer o app.use ele irá vir undefined 
-code: use(express.urlencoded({extended: true}))
