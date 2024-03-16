@@ -1,0 +1,1 @@
+criando views para exibir paginas.
