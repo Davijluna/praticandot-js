@@ -1,0 +1,4 @@
+criando views para exibir paginas.
+
+LEMBRETE : INSTALAR O EJS
+npm i ejs
