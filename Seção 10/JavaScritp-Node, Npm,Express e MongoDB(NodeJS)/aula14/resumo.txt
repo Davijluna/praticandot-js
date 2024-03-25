@@ -1,0 +1,4 @@
+conceito de Middleware.
+
+LEMBRETE : INSTALAR O EJS
+npm i ejs
