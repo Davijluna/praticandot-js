@@ -1,4 +1,12 @@
 conceito de Middleware.
 
+//
+PARANDO UMA PORTA: 
+lsof -w -n -i tcp:3000 ===-> para conseguir o pid da porta
+kill -9 pid ===-> coloca o número do pid que aparecer quando o comando acima ser executado 
+
+pronto a porta deve estar liberada para acesso.
+//
+
 LEMBRETE : INSTALAR O EJS
 npm i ejs
