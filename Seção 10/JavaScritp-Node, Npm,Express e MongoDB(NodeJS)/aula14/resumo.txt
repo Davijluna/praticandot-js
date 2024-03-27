@@ -10,3 +10,13 @@ pronto a porta deve estar liberada para acesso.
 
 LEMBRETE : INSTALAR O EJS
 npm i ejs
+
+mongodb+srv://davijluna:vhMWo8lWv4hcfrIk@teste.cgyijlp.mongodb.net/
+
+mongodb+srv://davijluna:<password>@teste.cgyijlp.mongodb.net/
+
+//////////
+davijluna
+vhMWo8lWv4hcfrIk
+
+82523614
