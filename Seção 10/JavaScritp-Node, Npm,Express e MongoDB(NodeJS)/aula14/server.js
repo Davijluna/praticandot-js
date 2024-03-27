@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express()
-// require("dotenv").config()
 
-const mongoose = require("mongoose")
-                        'mongodb+srv://root:root@cluster0.eeo6yrz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const mongoose = require('mongoose')
 const conectionString = "mongodb+srv://root:root@cluster0.eeo6yrz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 mongoose.connect(conectionString)
-  .then(() => console.log('Ocorreu a conexão.IIIIIIIIII')).catch((error) => console.log('erro na conexão', error))
+  .then(() => {
+    console.log('Conectei à base de dados.')
+    app.emit('pronto')
+  });
 
 const routes = require('./routes')
 const path = require('path')
@@ -30,7 +31,10 @@ app.set('view engine', 'ejs'); // todo: Utilizando a views engine -> ejs
 
 app.use(routes);
 
-app.listen(3000, () => {
-  console.log('acessar http://localhost:3000')
-  console.log('Servidor executando na porta 3000')
+app.on('pronto', () => {
+
+  app.listen(3000, () => {
+    console.log('acessar http://localhost:3000')
+    console.log('Servidor executando na porta 3000')
+  })
 })
