@@ -1,13 +1,15 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express()
 
-const mongoose = require('mongoose')
-const conectionString = "mongodb+srv://root:root@cluster0.eeo6yrz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-mongoose.connect(conectionString)
+const mongoose = require('mongoose');
+mongoose.connect(process.env.CONNECTIONSTRING)
   .then(() => {
     console.log('Conectei à base de dados.')
     app.emit('pronto')
-  });
+  })
+  .catch((error) => console.log('Erro aconteceu no conexão', error));
 
 const routes = require('./routes')
 const path = require('path')
