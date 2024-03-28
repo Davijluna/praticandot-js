@@ -1,3 +1,13 @@
+// const HomeModel = require('../models/HomeModel')
+
+// HomeModel.create({
+//   titulo: 'Outra coisa qualquer',
+//   descricao: 'Outra descrição.'
+// })
+
+// HomeModel.find()
+// .then((dados) => console.log(dados))
+// .catch((erro) => console.log('Erro ocorreu', erro));
 // TODO: Aqui temos dois middleware
 exports.paginaInicial = (req, res, next) => {
   res.render('index');
