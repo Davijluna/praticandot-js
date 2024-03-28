@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-be">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu HTML</title>
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/d85ca082-cdb9-46d9-b342-ece2fb14d34d/BR-pt-20240311-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+      background-size: cover;
+      background-position: top center;
+    }
+
+    #heading {
+      background: rgba(0,0,0, 0.7);
+    }
+
+    #heading div {
+      width: 90%;
+      display: flex;
+      /* background: #e50914; */
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    #heading .h1 {
+      padding: 15px 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      /* color: aliceblue; */
+    }
+
+    #heading a {
+      color: aliceblue;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Meu HTML</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus at, corrupti ut praesentium ratione ex recusandae sed labore esse sint debitis voluptatem minus quaerat repellat nihil beatae, excepturi voluptatum.
-  </p>
+  <header id="heading">
+    <div>
+      <h1 class="h1">
+        <a href="#">Netflix</a>
+      </h1>
+
+      <h2 class="h1">
+        <a href="#">Netflix</a>
+      </h2>
+    </div>
+  </header>
 </body>
+
 </html>
