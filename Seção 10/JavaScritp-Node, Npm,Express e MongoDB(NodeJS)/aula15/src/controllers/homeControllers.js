@@ -1,7 +1,5 @@
-// TODO: Aqui temos dois middleware
 exports.paginaInicial = (req, res) => {
-  req.session.usuario = { nome: 'Davi', logado: true } ;
-  res.render('index');
+    res.render('index');
  return;
 }
 
