@@ -1,12 +1,12 @@
 // TODO: Aqui temos dois middleware
 exports.paginaInicial = (req, res) => {
-  console.log(req.session.nome)
+  req.session.usuario = { nome: 'Davi', logado: true } ;
   res.render('index');
- return
+ return;
 }
 
 exports.trataPost = (req, res) => {
   res.send(req.body)
-  return
+  return;
 }
 
