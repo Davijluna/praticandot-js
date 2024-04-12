@@ -23,6 +23,11 @@ route.post('/', homeController.trataPost);
 // Rotas de contato
 route.get('/contato', contatoController.paginaInicial) // TODO: Este paginaInicial é de contatoController
 
+
+// ** rota alternativa
+
+route.post("/create", homeController.createTask)
+
 // route.get('/', (req, res) => {
 // })
 
