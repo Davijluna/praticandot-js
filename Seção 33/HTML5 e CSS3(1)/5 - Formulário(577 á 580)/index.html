@@ -10,6 +10,10 @@
       font-family: sans-serif;
     }
 
+    label {
+      cursor: pointer;
+    }
+
     
   </style>
 </head>
@@ -17,6 +21,40 @@
 <body>
   <form action="#" method="get" target="_blank" autocomplete="off">
     <p>O meu formulário</p>
+    <p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="seu nome">
+    </p>
+
+      <p>
+          <label for="dev1">Sou um dev</label>
+          <input type="checkbox" id="dev1" name="dev1" value="sim" >
+<br>
+          <label for="dev2">Sou um dev</label>
+          <input type="checkbox" id="dev2" name="dev2" value="sim" >
+<br>
+          <label for="dev3">Sou um dev</label>
+          <input type="checkbox" id="dev3" name="dev3" value="sim" >
+      </p>
+
+      <p>
+        Gênero:
+<br>
+        <label for="feminino">feminino</label>
+        <input type="radio" id="dev1" name="genero" value="feminino" >
+<br>
+        <label for="masculino">masculino</label>
+        <input type="radio" id="dev2" name="genero" value="masculino" >
+<br>
+        <label for="não optar">não optar</label>
+        <input type="radio" id="dev3" name="genero" value="não optar" >
+    </p>
+
+
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+    </p>
   </form>
 </body>
 

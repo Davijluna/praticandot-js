@@ -1,4 +1,8 @@
 Está parte têm explicação de formulários em 4 etapas.
+FORMULÁRIO PARTE 1 -> OK
+FORMULÁRIO PARTE 2 -> -
+FORMULÁRIO PARTE 3 -> -
+FORMULÁRIO PARTE 4 -> -
 
 Links:
 https://www.w3schools.com/html/html_form_input_types.asp
