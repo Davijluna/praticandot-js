@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/** seleção por class */
+
+.heading {
+  color: red;
+}
+
+/** seleção por tags */
+
+
+/* p {
+  color: red;
+} */
+
+/* body div section p,
+body div section h1
+ {
+  color: red;
+} */
