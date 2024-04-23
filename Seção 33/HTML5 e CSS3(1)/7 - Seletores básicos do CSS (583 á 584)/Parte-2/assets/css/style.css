@@ -3,21 +3,21 @@
   padding: 0;
 }
 
-/** seleção por class */
-
-.heading {
+.pai h1+p {
   color: red;
 }
-
-/** seleção por tags */
-
-
-/* p {
+/* 
+.pai h1~p {
   color: red;
 } */
 
-/* body div section p,
-body div section h1
- {
-  color: red;
-} */
+
+
+[meu-atributo="valor"] {
+  color:blue;
+}
+
+[checked] {
+  width: 50px;
+  height: 50px;
+}
