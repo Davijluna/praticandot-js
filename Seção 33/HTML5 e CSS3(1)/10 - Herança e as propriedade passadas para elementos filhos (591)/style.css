@@ -1,26 +1,5 @@
-/* 
-
-1 especificidade
-2 empate
-3 style
-4 !important ****
-
- 1 ID 
- 0 Class atributos e pseudos-classes 
- 0 Elementos e pseudos-elementos
-
-
- !important
-*/
-
-#p {
-  background: red;
-}
-
-#p.p {
-  background: yellow;
-}
-
-p#p.p {
-  background: blue;
+#texto {
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  font-size: 70px;
 }
