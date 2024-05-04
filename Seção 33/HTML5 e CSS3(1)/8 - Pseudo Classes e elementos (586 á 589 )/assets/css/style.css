@@ -4,11 +4,19 @@
 }
 
 .OI {
-  transition: all 300ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .OI:hover{
   background: green;
+}
+
+input:checked + p {
+  background: red;
+}
+
+input:not(:checked) + p {
+  background: yellow;
 }
 
 /* .pai h1+p {
@@ -19,6 +27,9 @@
   color: red;
 } */
 
+p:not(.meio) {
+  color: blue;
+}
 
 
 /* [meu-atributo="valor"] {
