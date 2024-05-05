@@ -1,2 +1,3 @@
 arquivo para inicio.
 apagar depois.
+Utilizando paletas de Cores em HTML.
