@@ -1,2 +1,0 @@
-para fazer push.
-excluir após o push.
