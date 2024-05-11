@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Modelo</title>
 </head>
-<!-- <%- includes('includes/head'); %> -->
+<%- include('./includes/head.ejs')%>
 <body>
 
   <section class="container">
@@ -15,10 +15,9 @@
 
     <h1>
       Lorem ipsum
-      <!-- <%= titulo %> 
-      <%- titulo %> --> 
-      <!-- <% if(typeof titulo !== 'undefined')  %> -->
-    </h1>
+      <%= titulo %> 
+      <%- titulo %>
+     
 
 
     <form action="/" method="post">
