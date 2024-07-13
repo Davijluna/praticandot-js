@@ -1,1 +1,34 @@
-/* teste */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.pai {
+    background-color: yellow;
+    width: 50rem; /*500px*/
+    height: 100vh;
+}
+
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+
+.color-one {
+    background-color: cornflowerblue;
+}
+
+.color-two {
+    background-color: rgb(235, 25, 10);
+}
+
+p {
+    font-size: 1.6rem;
+}
