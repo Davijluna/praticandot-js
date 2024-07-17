@@ -6,22 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Modelo</title>
+<%- include('./includes/head');%>
 </head>
-<%- include('./includes/head.ejs')%>
 <body>
 
   <section class="container">
 
 
     <h1>
-      Lorem ipsum
-
-      titulo
+     <%= csrfToken %>
     </h1>
 
 
     <form action="/" method="post">
-      <input type="hidden" name="__csrf" value="<%= csrfToken %>">
+      <input type="hidden" name="_csrf" value="<%=csrfToken%>" >
       <label>Cliente</label>
       <input type="text" name="cliente">
       <body>
@@ -29,6 +27,7 @@
       </body>
     </form>
   </section>
+
 
   <script src="./assets/js/bundle.js"></script>
 </body>
