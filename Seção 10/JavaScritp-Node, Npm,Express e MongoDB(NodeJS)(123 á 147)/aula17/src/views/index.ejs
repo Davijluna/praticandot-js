@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+<%- include('./includes/head');%>
+</head>
+<body>
+
+  <section class="container">
+
+
+    <h1>
+     <%= csrfToken %>
+    </h1>
+
+
+    <form action="/" method="post">
+      <input type="hidden" name="_csrf" value="<%=csrfToken%>" >
+      <label>Cliente</label>
+      <input type="text" name="cliente">
+      <body>
+        <button>Submit</button>
+      </body>
+    </form>
+  </section>
+
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
