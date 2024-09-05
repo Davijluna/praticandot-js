@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+/* .pai{}  */
+
+.filha1, .filha2 {
+    width: 300px;
+    height: 300px;
+    background: rebeccapurple;
+    margin: 10px;
+    /* position: static "AS DIVS VEM COM PADRÃO POSITION STATIC */
+    ;
+}
+
+.filha2 {
+    background: greenyellow;
+}
+
+
+.filha1 {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/* ESSAS PROPIEDADES NÃO FUNCIONA COM O POSITION STATIC ATIVO
+top: 30px;
+left: 30px
+*/
+
+/* AGORA COM POSITION RELATIVE ELE OBEDECE AS PROPRIEDADES ACIMA */
