@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  box-sizing: border-box;
+  padding: 9px;
+}
+
+.grid::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid .coll {
+  box-sizing: border-box;
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 9px;
+}
+
+.grid .col-content {
+  width: 100%;
+  height: 100px;
+  background: red;
+}
+
+@media all and (max-width: 320px) {
+  .grid .coll {
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+  .grid .coll {
+    width: 50%;
+  }
+}
+
+/* p {
+  clear: right;
+} */
