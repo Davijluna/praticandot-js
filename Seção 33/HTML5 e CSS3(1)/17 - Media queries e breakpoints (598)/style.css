@@ -40,6 +40,13 @@
   }
 }
 
+@media (min-width: 321px) and (max-width: 768px){
+  .grid .coll {
+    width: 50%;
+  }
+}
+
+
 /* p {
   clear: right;
 } */
